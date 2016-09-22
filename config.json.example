@@ -1,0 +1,11 @@
+{
+  "bloomsky": {
+    "api_key": "YOUR BLOOMSKY API KEY HERE"
+  },
+  "keen.io": {
+    "write_key": "YOUR KEEN.IO WRITE KEY HERE",
+    "project_id": "YOUR KEEN.IO PROJECT ID HERE",
+    "event_collector": "YOUR KEEN.IO EVENT COLLECTOR HERE"
+  },
+  "agent_name": "WHATEVER YOU WANT TO NAME YOUR BLOOMSKY"
+}

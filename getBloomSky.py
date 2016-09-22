@@ -18,6 +18,7 @@ config = json.loads(configurations)
 agent_name = config["agent_name"]
 project_id = config["keen.io"]["project_id"]
 write_key = config["keen.io"]["write_key"]
+event_collector = config["keen.io"]["event_collector"]
 bloomSky_apiKey = config["bloomsky"]["api_key"]
 
 url = "http://thirdpartyapi.appspot.com/api/skydata/"
@@ -49,4 +50,4 @@ client = KeenClient(
 	get_timeout = 100
 	)
 
-client.add_event("bloomsky", bloomskyData[0]['Data'])
+client.add_event(event_collector, bloomskyData[0]['Data'])
