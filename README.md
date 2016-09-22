@@ -1,5 +1,5 @@
 # What is this?
-This is python script to get a subset of data that bloomsky API and push it to keen.io. You can use it to store outside temperature, humidity, etc in keen.io to analyze it.
+This is a python script to get a subset of data that the bloomsky API provides and push them to keen.io. You can use it to store outside temperature, humidity, etc in keen.io to analyze it in the future.
 
 # Requirements
 
