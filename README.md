@@ -22,7 +22,7 @@ And last but not least, you need a keen.io account and a project.
     "write_key": "YOUR KEEN.IO WRITE KEY HERE",
     "project_id": "YOUR KEEN.IO PROJECT ID HERE"
   },
-  "agent_name": "WHATEVER YOU ANT TO NAME YOUR BLOOMSKY"
+  "agent_name": "WHATEVER YOU WANT TO NAME YOUR BLOOMSKY"
 }
 ```
 
