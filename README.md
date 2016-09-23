@@ -33,4 +33,7 @@ That's it! ;)
 - Wait what? Why are you converting units? Don't you know that bloomsky has an SI API?
 
 I do know, but the SI unit returns Pressure as an integer, which ends up plotting the Pressure graphs as increments of 1. That doesn't look pretty :(
- 
+
+- Why is this written like a batch file?
+
+I use this to pull data every 5 mins with a cronjob. It just works! :) 
