@@ -11,20 +11,7 @@ And last but not least, you need a keen.io account and a project.
 
 # config.json format
 
-You can also find an example config.json.example file in the repo
-
-```
-{
-  "bloomsky": {
-    "api_key": "YOUR BLOOMSKY API KEY HERE"
-  },
-  "keen.io": {
-    "write_key": "YOUR KEEN.IO WRITE KEY HERE",
-    "project_id": "YOUR KEEN.IO PROJECT ID HERE"
-  },
-  "agent_name": "WHATEVER YOU WANT TO NAME YOUR BLOOMSKY"
-}
-```
+You can find an example config.json.example file in the repo
 
 That's it! ;)
 

@@ -5,7 +5,7 @@
   "keen.io": {
     "write_key": "YOUR KEEN.IO WRITE KEY HERE",
     "project_id": "YOUR KEEN.IO PROJECT ID HERE",
-    "event_collector": "YOUR KEEN.IO EVENT COLLECTOR HERE"
+    "event_collector": "YOUR KEEN.IO EVENT COLLECTOR NAME HERE"
   },
   "agent_name": "WHATEVER YOU WANT TO NAME YOUR BLOOMSKY"
 }
