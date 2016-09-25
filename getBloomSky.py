@@ -1,4 +1,5 @@
 import requests
+import argparse
 import json
 import datetime
 from keen.client import KeenClient
@@ -9,8 +10,14 @@ def toMilliBar(inhg):
 def toCelsius(fahrenheit):
 	return "%.3f" % ((fahrenheit-32)*0.55555)
 
+parser = argparse.ArgumentParser(description='Take Bloomsky device data and push it to keen.io event collector')
+parser.add_argument('--config', '-c', default='config.json')
+args=parser.parse_args()
+
+# Default config.json file is in the same folder.
+
 # Read config.json
-with open('config.json', 'r') as f:
+with open(args.config, 'r') as f:
 	configurations = f.read()
 
 config = json.loads(configurations)
