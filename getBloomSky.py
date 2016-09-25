@@ -35,15 +35,21 @@ bloomskyData[0]['Data'].pop('TS', 0)
 bloomskyData[0]['Data'].pop('ImageTS', 0)
 
 # Convert to Celsius and millibar
-bloomskyData[0]['Data']['Temperature'] = toCelsius(bloomskyData[0]['Data']['Temperature'])
-bloomskyData[0]['Data']['Pressure']  = toMilliBar(bloomskyData[0]['Data']['Pressure'])
-bloomskyData[0]['Data']['AgentName'] = agent_name
+# Also below I'm doing bunch of field name normalizations to conform
+# my naming standards with other IoTs that I have at home
+bloomskyData[0]['Data']['temperature'] = toCelsius(bloomskyData[0]['Data']['Temperature'])
+bloomskyData[0]['Data'].pop('Temperature')
+bloomskyData[0]['Data']['pressure']  = toMilliBar(bloomskyData[0]['Data']['Pressure'])
+bloomskyData[0]['Data'].pop('Pressure')
+bloomskyData[0]['Data']['humidity'] = bloomskyData[0]['Data'].pop('Humidity')
+bloomskyData[0]['Data']['agentName'] = agent_name
 bloomskyData[0]['Data']['timestamp'] = datetime.datetime.utcnow().strftime("%FT%H:%M:%S.%fZ")
-# Convert the bloomSky data to json
-#bloomskyDataJson = json.dumps(bloomskyData[0]['Data'])
+bloomskyData[0]['Data']['day'] = not  bloomskyData[0]['Data'].pop('Night')
+bloomskyData[0]['Data']['rain'] = bloomskyData[0]['Data'].pop('Rain')
+# Hoping that Electric Imp lux and BloomSky Luminance are similar :)
+bloomskyData[0]['Data']['lux'] = bloomskyData[0]['Data'].pop('Luminance')
 
 # Create the Keen.io client
-
 client = KeenClient(
 	project_id = project_id,
 	write_key = write_key,
