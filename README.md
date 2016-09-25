@@ -1,7 +1,9 @@
 # What is this?
 This is a python script to get a subset of data that the bloomsky API provides and push them to keen.io. You can use it to store outside temperature, humidity, etc in keen.io to analyze it in the future.
 
-'python getBloomSky.py --config /path/to/config.json'
+```bash
+python getBloomSky.py --config /path/to/config.json
+```
 
 # Requirements
 
