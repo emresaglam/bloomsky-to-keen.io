@@ -5,10 +5,10 @@ import datetime
 from keen.client import KeenClient
 
 def toMilliBar(inhg):
-	return "%.3f" % (inhg*33.86)
+	return float("%.3f" % (inhg*33.86))
 
 def toCelsius(fahrenheit):
-	return "%.3f" % ((fahrenheit-32)*0.55555)
+	return float("%.3f" % ((fahrenheit-32)*0.55555))
 
 parser = argparse.ArgumentParser(description='Take Bloomsky device data and push it to keen.io event collector')
 parser.add_argument('--config', '-c', default='config.json')
@@ -62,5 +62,5 @@ client = KeenClient(
 	write_key = write_key,
 	get_timeout = 100
 	)
-
+#print bloomskyData[0]['Data']
 client.add_event(event_collector, bloomskyData[0]['Data'])
