@@ -29,3 +29,6 @@ That's it! ;)
 2. Why is this written like a batch file?
 
    I use this to pull data every 5 mins with a cronjob. It just works! :) 
+   
+---
+###### I have no affiliations neither with BloomSky nor Keen.io...
