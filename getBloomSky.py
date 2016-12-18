@@ -27,8 +27,7 @@ project_id = config["keen.io"]["project_id"]
 write_key = config["keen.io"]["write_key"]
 event_collector = config["keen.io"]["event_collector"]
 bloomSky_apiKey = config["bloomsky"]["api_key"]
-
-url = "http://thirdpartyapi.appspot.com/api/skydata/"
+url = config["bloomsky"]["url"]
 
 header = {"Authorization" : bloomSky_apiKey}
 

@@ -1,5 +1,6 @@
 {
   "bloomsky": {
+    "url": "https://api.bloomsky.com/api/skydata/",
     "api_key": "YOUR BLOOMSKY API KEY HERE"
   },
   "keen.io": {
